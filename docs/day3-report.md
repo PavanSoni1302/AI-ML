@@ -14,8 +14,12 @@ Python 3.12, VS Code, Jupyter, NumPy and Pandas installed successfully.
 
 ## Debugging Log
 
-* Fixed multiple Python version conflict
-* Fixed pip installation using python -m pip
+* Issue: ModuleNotFoundError: No module named 'numpy'
+  Cause: NumPy was not installed in the active Python environment
+  Solution: Installed NumPy using pip and verified installation
+* Issue: ModuleNotFoundError: No module named 'pandas'
+  Cause: Pandas library was not installed in the environment
+  Solution: Installed pandas using pip and ensured correct interpreter was selected in VS Code
 
 ## Key Insights
 
