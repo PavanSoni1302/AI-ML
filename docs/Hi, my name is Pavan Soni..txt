@@ -1,0 +1,19 @@
+Hi, my name is Pavan Soni.
+In this project, I have built a Mux Intelligence prototype, which is a user compatibility prediction system for pairing users based on their 
+preferences and behavior.
+
+The goal of this system is to determine whether two users are compatible for a specific activity by analyzing multiple factors like interests, 
+availability, and activity preferences.
+
+To solve this, I first created a structured dataset representing user interaction features such as age difference, common interests, availability overlap, and activity match.
+Since user behavior is not linear, I used Polynomial Features to capture complex relationships between these inputs.
+Then, I applied a Random Forest Classifier as the final model, which combines multiple decision trees to improve stability and accuracy.
+
+The model was evaluated using accuracy and a confusion matrix, which shows how well the system predicts compatible and non-compatible pairs.
+To make the system explainable, I used feature importance, which highlights the key factors influencing compatibility decisions.
+
+From the feature importance results, I observed that factors like activity match and availability overlap play a major role in determining compatibility.
+
+I also tested the system with a sample user pair, and the model successfully predicted whether they are compatible or not.
+
+This project helped me understand how to build an end-to-end machine learning system and how to combine multiple techniques for better performance and explainability. Thank you.
