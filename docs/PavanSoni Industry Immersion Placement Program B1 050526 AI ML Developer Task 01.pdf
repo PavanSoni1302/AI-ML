@@ -1,0 +1,84 @@
+PavanSoni Industry Immersion Placement Program B1 050526 AI ML Developer Task 01
+
+1. Objective
+Objective of Day 1 was to create a development environment for executing AI/ML tasks. This included installing Python, setting up virtual environment, installing necessary libraries and verification of the environment creation.
+
+2. System Setup & Installation
+My System:
+- OS: Windows
+- Python: 3.12
+- IDE: Visual Studio Code
+- Terminal: PowerShell
+
+Step 1: Install Python
+Downloading from official website and Installing python, choosing option “Add Python to PATH”
+
+To verify, command:
+python --version
+Result displayed Python installation
+
+Step 2: Create Project Folder
+Created Folder called "AI-ML" and opened it in Visual Studio Code
+
+Step 3: Creating Virtual Environment
+Inside folder ran:
+python -m venv .venv
+
+Step 4: Activating Virtual Environment
+Activated Virtual Environment with command inside terminal PowerShell:
+.venv\Scripts\Activate.ps1
+Terminal showed "(.venv)" confirming activation of the virtual environment
+
+Step 5: Installing Necessary Libraries
+Installed following libraries which were necessary:
+pip install numpy pandas matplotlib scikit-learn
+
+Step 6: Verifying installation
+Create a file “test.py” with following code:
+import numpy
+import pandas
+import sklearn
+
+print("Environment setup successful")
+
+ran command
+python test.py
+The Result: "Environment setup successful"
+
+3. Code Implementation
+Above implementation checks whether all main libraries have been installed or not.
+
+4. Step-by-Step Execution
+- Open Visual Studio Code
+- Open "AI-ML" Project folder
+- Opening terminal
+- Activating virtual environment
+- Installing Necessary Libraries
+- Creating a file to Test Installation
+- Running File to Test Installation
+
+5. Output (Visual Proof)
+(insert screenshot)
+
+Screenshots to be inserted:
+- Terminal showing virtual environment activation
+- Process of Library Installation
+- Test.py Result: Environment setup successful
+
+6. Bug Log
+Bug 1: Power shell error when activating virtual environment.
+Caused due to security policy of windows.
+Solution: Set execution policy in Powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+
+Bug 2: Python not being identified in the terminal
+Caused due to wrong installation of python.
+Solution: Redownload and reinstall.
+
+7. Key Learning
+- How to properly create a development environment
+- Importance of virtual environment
+- How to verify installation of necessary ML libraries
+
+8. Reflection
+Creating a proper development environment is the first necessary step. This helps in managing dependencies and prevents future problems.
