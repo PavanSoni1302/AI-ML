@@ -3,8 +3,13 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-students = pd.read_csv(os.path.join(BASE_DIR, "data", "students.csv"))
-jobs = pd.read_csv(os.path.join(BASE_DIR, "data", "jobs.csv"))
+students = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "students.csv")
+)
+
+jobs = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "jobs.csv")
+)
 
 student = students.iloc[0]
 job = jobs.iloc[0]
@@ -13,21 +18,24 @@ print("=" * 50)
 print("MATCH EXPLANATION")
 print("=" * 50)
 
-print(f"Student : {student['name']}")
-print(f"Job     : {job['role']}")
+print(f"Candidate: {student['name']}")
+print(f"Role: {job['role']}")
+
 print()
 
-if student["python"] >= job["python_req"]:
-    print("✓ Python requirement satisfied")
+print(
+    f"Python exceeds threshold by "
+    f"{student['python'] - job['python_req']}"
+)
 
-if student["ml"] >= job["ml_req"]:
-    print("✓ Machine Learning requirement satisfied")
+print(
+    f"ML exceeds threshold by "
+    f"{student['ml'] - job['ml_req']}"
+)
 
-if student["sql"] >= job["sql_req"]:
-    print("✓ SQL requirement satisfied")
+print(
+    f"SQL exceeds threshold by "
+    f"{student['sql'] - job['sql_req']}"
+)
 
-if student["projects"] >= job["projects_req"]:
-    print("✓ Project requirement satisfied")
-
-if student["experience"] >= job["exp_req"]:
-    print("✓ Experience requirement satisfied")
+print("\nDecision: ELIGIBLE")

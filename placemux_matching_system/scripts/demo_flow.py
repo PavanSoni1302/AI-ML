@@ -1,25 +1,33 @@
 print("=" * 50)
-print("PLACEMUX MARKETPLACE DEMO")
+print("PLACEMUX JOB THRESHOLD DEMO")
 print("=" * 50)
 
-print("Company: Google")
+print("\n1. Company Registered")
 
-print("\nPosted Job:")
+print("Google")
+
+print("\n2. Job Posted")
+
 print("AI Engineer")
 
-print("\nFinding Candidates...")
+print("\n3. Threshold Applied")
 
-print("\nMatched Student:")
-print("Pavan")
+print("Python >= 80")
+print("ML >= 85")
+print("SQL >= 60")
 
-print("\nMatch Score:")
-print("92%")
+print("\n4. Students Evaluated")
 
-print("\nReason:")
-print("- Python exceeds requirement")
-print("- ML exceeds requirement")
-print("- SQL exceeds requirement")
-print("- Projects exceed requirement")
-print("- Experience exceeds requirement")
+print("10 Students")
 
-print("\nDecision: MATCH")
+print("\n5. Match Vectors Generated")
+
+print("[10, 7, 15]")
+
+print("\n6. Candidates Ranked")
+
+print("Pavan Ranked #1")
+
+print("\n7. Final Decision")
+
+print("ELIGIBLE")

@@ -1,22 +1,45 @@
-# PlaceMux Matching System
+# PlaceMux Job Threshold Matching Engine
 
 ## Objective
-Design the matching foundation that turns verified student scores into job matches.
+Build a threshold-based matching system that converts verified student skill scores into explainable job matches.
 
 ## Features
-- Student ↔ Job Feature Space
-- Baseline Matching Logic
-- Random Forest Matching Model
-- Match Explainability
-- API Contract
-- Marketplace Data Model
+- Company onboarding
+- Job posting with skill thresholds
+- Match vector generation
+- Threshold validation
+- Candidate ranking
+- Explainable recommendations
+- End-to-end workflow demonstration
 
-## How to Run
+## Project Structure
 
-python scripts/baseline_match.py
+data/
+- students.csv
+- jobs.csv
+- companies.csv
 
-python scripts/train_model.py
+scripts/
+- company_signup.py
+- post_job.py
+- generate_match_vectors.py
+- threshold_validation.py
+- ranking_engine.py
+- explain_match.py
+- demo_flow.py
 
-python scripts/evaluate_model.py
+## How To Run
+
+python scripts/company_signup.py
+
+python scripts/post_job.py
+
+python scripts/generate_match_vectors.py
+
+python scripts/threshold_validation.py
+
+python scripts/ranking_engine.py
 
 python scripts/explain_match.py
+
+python scripts/demo_flow.py
