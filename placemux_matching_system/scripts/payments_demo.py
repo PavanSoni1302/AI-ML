@@ -1,17 +1,34 @@
+import pandas as pd
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+payments = [
+    {
+        "student": "Pavan",
+        "job": "AI Engineer",
+        "amount": 100,
+        "status": "SUCCESS"
+    },
+    {
+        "student": "Rahul",
+        "job": "ML Engineer",
+        "amount": 100,
+        "status": "FAILED"
+    }
+]
+
+df = pd.DataFrame(payments)
+
 print("=" * 60)
-print("PAYMENTS QUALITY BASELINE DEMO")
+print("PAYMENT TRANSACTION REPORT")
 print("=" * 60)
 
-print("\nCurrent Matching System")
+print(df)
 
-print("Threshold Validation: PASS")
+df.to_csv(
+    os.path.join(BASE_DIR, "outputs", "payment_history.csv"),
+    index=False
+)
 
-print("Candidate Ranking: PASS")
-
-print("Explainability: PASS")
-
-print("\nBaseline Saved")
-
-print("Average Match Score Recorded")
-
-print("\nReady For Future Monetization Layer")
+print("\nPayment history saved.")

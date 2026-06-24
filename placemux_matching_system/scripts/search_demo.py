@@ -1,25 +1,71 @@
-print("=" * 50)
-print("PLACEMUX SEARCH & DISCOVERY DEMO")
-print("=" * 50)
+import pandas as pd
+import os
 
-print("\n1. Student Searches Jobs")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-print("\nStudent: Pavan")
+students = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "students.csv")
+)
 
-print("\n2. Ranked Jobs Returned")
+jobs = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "jobs.csv")
+)
 
-print("AI Engineer")
-print("Research Intern")
-print("ML Engineer")
+student = students.iloc[0]
 
-print("\n3. Company Opens Job")
+results = []
 
-print("AI Engineer")
+for _, job in jobs.iterrows():
 
-print("\n4. Ranked Candidates Returned")
+    score = (
+        (student["python"] - job["python_req"])
+        + (student["ml"] - job["ml_req"])
+        + (student["sql"] - job["sql_req"])
+        + (student["communication"] - job["comm_req"])
+    )
 
-print("Neha")
-print("Pavan")
-print("Priya")
+    results.append(
+        {
+            "Job": job["role"],
+            "Score": score
+        }
+    )
 
-print("\nSearch & Discovery Complete")
+ranked_jobs = pd.DataFrame(results)
+
+ranked_jobs = ranked_jobs.sort_values(
+    by="Score",
+    ascending=False
+)
+
+top_job = ranked_jobs.iloc[0]
+
+output_path = os.path.join(
+    BASE_DIR,
+    "outputs",
+    "search_results.csv"
+)
+
+ranked_jobs.to_csv(
+    output_path,
+    index=False
+)
+
+print("=" * 60)
+print("PLACEMUX SEARCH DISCOVERY")
+print("=" * 60)
+
+print("\nStudent:")
+print(student["name"])
+
+print("\nTop 5 Recommended Jobs")
+print(ranked_jobs.head())
+
+print("\nBest Match")
+print(top_job["Job"])
+
+print("\nScore")
+print(top_job["Score"])
+
+print("\nSearch Results Saved To:")
+print(output_path)

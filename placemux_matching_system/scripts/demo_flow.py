@@ -1,33 +1,67 @@
-print("=" * 50)
-print("PLACEMUX JOB THRESHOLD DEMO")
-print("=" * 50)
+import pandas as pd
+import os
 
-print("\n1. Company Registered")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-print("Google")
+companies = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "companies.csv")
+)
 
-print("\n2. Job Posted")
+jobs = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "jobs.csv")
+)
 
-print("AI Engineer")
+students = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "students.csv")
+)
 
-print("\n3. Threshold Applied")
+company = companies.iloc[0]
+job = jobs.iloc[0]
 
-print("Python >= 80")
-print("ML >= 85")
-print("SQL >= 60")
+results = []
 
-print("\n4. Students Evaluated")
+for _, student in students.iterrows():
 
-print("10 Students")
+    score = (
+        (student["python"] - job["python_req"])
+        + (student["ml"] - job["ml_req"])
+        + (student["sql"] - job["sql_req"])
+        + (student["communication"] - job["comm_req"])
+    )
 
-print("\n5. Match Vectors Generated")
+    results.append(
+        {
+            "Candidate": student["name"],
+            "Score": score
+        }
+    )
 
-print("[10, 7, 15]")
+ranked = pd.DataFrame(results)
 
-print("\n6. Candidates Ranked")
+ranked = ranked.sort_values(
+    by="Score",
+    ascending=False
+)
 
-print("Pavan Ranked #1")
+print("=" * 60)
+print("PLACEMUX END TO END FLOW")
+print("=" * 60)
 
-print("\n7. Final Decision")
+print("\nCompany:")
+print(company["company_name"])
 
-print("ELIGIBLE")
+print("\nJob:")
+print(job["role"])
+
+print("\nTop Candidate:")
+print(ranked.iloc[0]["Candidate"])
+
+print("\nMatch Score:")
+print(ranked.iloc[0]["Score"])
+
+ranked.to_csv(
+    os.path.join(BASE_DIR, "outputs", "final_ranking.csv"),
+    index=False
+)
+
+print("\nFinal ranking saved.")

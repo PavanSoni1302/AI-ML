@@ -1,15 +1,53 @@
-print("="*60)
-print("SPEND QUALITY GUARDRAIL DEMO")
-print("="*60)
+import pandas as pd
+import os
 
-print("\nStudent Opens Job")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-print("\nMatch Score Calculated")
+students = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "students.csv")
+)
 
-print("\nSystem Checks Quality")
+jobs = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "jobs.csv")
+)
 
-print("\nLow-Fit Warning Generated")
+warnings = []
 
-print("\nStudent Protected From Poor Spend")
+for _, student in students.iterrows():
 
-print("\nGuardrail Working Successfully")
+    for _, job in jobs.iterrows():
+
+        score = (
+            (student["python"] - job["python_req"])
+            + (student["ml"] - job["ml_req"])
+            + (student["sql"] - job["sql_req"])
+        )
+
+        status = "GOOD FIT"
+
+        if score < 20:
+            status = "LOW FIT WARNING"
+
+        warnings.append(
+            {
+                "Student": student["name"],
+                "Job": job["role"],
+                "Score": score,
+                "Status": status
+            }
+        )
+
+df = pd.DataFrame(warnings)
+
+print("=" * 60)
+print("SPEND QUALITY GUARDRAIL")
+print("=" * 60)
+
+print(df.head(10))
+
+df.to_csv(
+    os.path.join(BASE_DIR, "outputs", "guardrail_report.csv"),
+    index=False
+)
+
+print("\nGuardrail report saved.")

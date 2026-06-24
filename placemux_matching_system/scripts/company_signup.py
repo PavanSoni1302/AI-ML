@@ -3,12 +3,37 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-companies_path = os.path.join(BASE_DIR, "data", "companies.csv")
+companies_file = os.path.join(
+    BASE_DIR,
+    "data",
+    "companies.csv"
+)
 
-companies = pd.read_csv(companies_path)
+companies = pd.read_csv(companies_file)
 
-print("=" * 50)
-print("REGISTERED COMPANIES")
-print("=" * 50)
+new_company = {
+    "company_name": "Infosys",
+    "industry": "IT Services"
+}
 
-print(companies)
+companies = pd.concat(
+    [companies, pd.DataFrame([new_company])],
+    ignore_index=True
+)
+
+companies.to_csv(
+    companies_file,
+    index=False
+)
+
+print("=" * 60)
+print("COMPANY SIGNUP")
+print("=" * 60)
+
+print("\nCompany Registered Successfully")
+
+print(new_company)
+
+print("\nTotal Companies")
+
+print(len(companies))

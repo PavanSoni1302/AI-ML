@@ -3,17 +3,40 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-jobs = pd.read_csv(
-    os.path.join(BASE_DIR, "data", "jobs.csv")
+jobs_file = os.path.join(
+    BASE_DIR,
+    "data",
+    "jobs.csv"
 )
 
-print("=" * 50)
-print("POSTED JOBS")
-print("=" * 50)
+jobs = pd.read_csv(jobs_file)
 
-for _, job in jobs.iterrows():
-    print(f"\nJob ID: {job['job_id']}")
-    print(f"Role: {job['role']}")
-    print(f"Python Threshold: {job['python_req']}")
-    print(f"ML Threshold: {job['ml_req']}")
-    print(f"SQL Threshold: {job['sql_req']}")
+new_job = {
+    "role": "Data Analyst",
+    "python_req": 70,
+    "ml_req": 60,
+    "sql_req": 80,
+    "comm_req": 75
+}
+
+jobs = pd.concat(
+    [jobs, pd.DataFrame([new_job])],
+    ignore_index=True
+)
+
+jobs.to_csv(
+    jobs_file,
+    index=False
+)
+
+print("=" * 60)
+print("JOB POSTING")
+print("=" * 60)
+
+print("\nJob Posted Successfully")
+
+print(new_job)
+
+print("\nTotal Jobs")
+
+print(len(jobs))

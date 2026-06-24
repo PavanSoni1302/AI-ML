@@ -1,15 +1,54 @@
-print("="*60)
-print("PAY PER APPLICATION DEMO")
-print("="*60)
+import pandas as pd
+import os
 
-print("\nStudent Pays ₹100")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-print("\nSystem Uses Tuned Ranking")
+students = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "students.csv")
+)
 
-print("\nHigher Quality Matches Returned")
+jobs = pd.read_csv(
+    os.path.join(BASE_DIR, "data", "jobs.csv")
+)
 
-print("\nTop Candidate Fit Score = 94")
+job = jobs.iloc[0]
 
-print("\nApplication Submitted Successfully")
+results = []
 
-print("\nConversion Protected")
+for _, student in students.iterrows():
+
+    score = (
+        (student["python"] - job["python_req"]) * 1.5
+        + (student["ml"] - job["ml_req"]) * 1.5
+        + (student["sql"] - job["sql_req"]) * 1.2
+        + student["projects"] * 5
+        + student["experience"] * 8
+        + student["cgpa"] * 2
+    )
+
+    results.append(
+        {
+            "Candidate": student["name"],
+            "Conversion Score": round(score, 2)
+        }
+    )
+
+ranked = pd.DataFrame(results)
+
+ranked = ranked.sort_values(
+    by="Conversion Score",
+    ascending=False
+)
+
+print("=" * 60)
+print("CONVERSION TUNED MATCHING")
+print("=" * 60)
+
+print(ranked)
+
+ranked.to_csv(
+    os.path.join(BASE_DIR, "outputs", "conversion_ranking.csv"),
+    index=False
+)
+
+print("\nConversion ranking saved.")
