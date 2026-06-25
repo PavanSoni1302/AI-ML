@@ -1,0 +1,20 @@
+Pavan Soni
+
+AI/ML Developer
+
+Skills:
+Python
+Machine Learning
+SQL
+Pandas
+NumPy
+Scikit-Learn
+Flask
+Git
+Communication
+Problem Solving
+
+Projects:
+AI Matching System
+Malware Detection
+Blockchain Evidence System

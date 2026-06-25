@@ -1,0 +1,11 @@
+required_skill,required
+python,True
+machine learning,True
+sql,True
+flask,True
+git,True
+pandas,True
+numpy,False
+scikit-learn,False
+communication,True
+problem solving,True
