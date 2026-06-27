@@ -1,0 +1,15 @@
+student_id,student_name,job_role,recommendation_score,explanation,review_status
+1,Pavan,Data Analyst,84.5,Python requirement satisfied | Machine Learning requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+10,Meera,Data Analyst,83.5,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+3,Priya,Data Analyst,81.75,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+7,Neha,Data Analyst,80.0,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+1,Pavan,85,75.25,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+9,Karan,85,75.25,Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+9,Karan,75,72.0,Python requirement satisfied | Machine Learning requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+10,Meera,85,71.75,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+5,Sneha,85,71.25,Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+9,Karan,80,71.0,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+5,Sneha,75,71.0,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+1,Pavan,80,70.0,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+3,Priya,85,70.0,Python requirement satisfied | Machine Learning requirement satisfied | SQL requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
+1,Pavan,75,70.0,Python requirement satisfied | Machine Learning requirement satisfied | Communication requirement satisfied | Candidate passed AI trust verification,Pending
