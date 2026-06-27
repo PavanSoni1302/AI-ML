@@ -1,0 +1,11 @@
+skill,found,category
+python,True,Programming
+machine learning,True,Artificial Intelligence
+sql,True,Database
+flask,True,Backend
+git,True,Version Control
+pandas,True,Data Science
+numpy,True,Data Science
+scikit-learn,True,Artificial Intelligence
+communication,True,Soft Skills
+problem solving,True,Soft Skills

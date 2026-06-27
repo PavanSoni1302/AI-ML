@@ -1,0 +1,11 @@
+student_id,name,trust_score,trust_status,reason
+1,Pavan,87,APPROVED,Verified candidate with parsed ontology.
+2,Rahul,51,REJECTED,Failed trust validation.
+3,Priya,91,APPROVED,Verified candidate with parsed ontology.
+4,Amit,43,REJECTED,Failed trust validation.
+5,Sneha,84,APPROVED,Verified candidate with parsed ontology.
+6,Rohan,76,REVIEW,Requires manual verification.
+7,Neha,92,APPROVED,Verified candidate with parsed ontology.
+8,Arjun,49,REJECTED,Failed trust validation.
+9,Karan,85,APPROVED,Verified candidate with parsed ontology.
+10,Meera,89,APPROVED,Verified candidate with parsed ontology.

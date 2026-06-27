@@ -1,0 +1,37 @@
+student_id,student_name,job_role,recommendation_score,trust_status,reason
+9,Karan,Data Analyst,86.5,APPROVED,High skill similarity with verified trust.
+5,Sneha,Data Analyst,85.5,APPROVED,High skill similarity with verified trust.
+1,Pavan,Data Analyst,84.5,APPROVED,High skill similarity with verified trust.
+10,Meera,Data Analyst,83.5,APPROVED,High skill similarity with verified trust.
+3,Priya,Data Analyst,81.75,APPROVED,High skill similarity with verified trust.
+7,Neha,Data Analyst,80.0,APPROVED,High skill similarity with verified trust.
+1,Pavan,85,75.25,APPROVED,High skill similarity with verified trust.
+9,Karan,85,75.25,APPROVED,High skill similarity with verified trust.
+9,Karan,75,72.0,APPROVED,High skill similarity with verified trust.
+10,Meera,85,71.75,APPROVED,High skill similarity with verified trust.
+5,Sneha,85,71.25,APPROVED,High skill similarity with verified trust.
+9,Karan,80,71.0,APPROVED,High skill similarity with verified trust.
+5,Sneha,75,71.0,APPROVED,High skill similarity with verified trust.
+1,Pavan,80,70.0,APPROVED,High skill similarity with verified trust.
+3,Priya,85,70.0,APPROVED,High skill similarity with verified trust.
+1,Pavan,75,70.0,APPROVED,High skill similarity with verified trust.
+10,Meera,75,69.0,APPROVED,High skill similarity with verified trust.
+5,Sneha,80,68.5,APPROVED,High skill similarity with verified trust.
+9,Karan,60,68.25,APPROVED,High skill similarity with verified trust.
+7,Neha,85,68.25,APPROVED,High skill similarity with verified trust.
+3,Priya,75,67.25,APPROVED,High skill similarity with verified trust.
+1,Pavan,60,67.25,APPROVED,High skill similarity with verified trust.
+10,Meera,80,66.5,APPROVED,High skill similarity with verified trust.
+5,Sneha,60,65.75,APPROVED,High skill similarity with verified trust.
+7,Neha,75,65.5,APPROVED,High skill similarity with verified trust.
+3,Priya,80,64.75,APPROVED,High skill similarity with verified trust.
+10,Meera,60,63.75,APPROVED,High skill similarity with verified trust.
+9,Karan,70,63.5,APPROVED,High skill similarity with verified trust.
+7,Neha,80,63.0,APPROVED,High skill similarity with verified trust.
+1,Pavan,70,62.5,APPROVED,High skill similarity with verified trust.
+3,Priya,60,62.0,APPROVED,High skill similarity with verified trust.
+5,Sneha,70,61.0,APPROVED,High skill similarity with verified trust.
+7,Neha,60,60.25,APPROVED,High skill similarity with verified trust.
+10,Meera,70,59.0,APPROVED,High skill similarity with verified trust.
+3,Priya,70,57.25,APPROVED,High skill similarity with verified trust.
+7,Neha,70,55.5,APPROVED,High skill similarity with verified trust.

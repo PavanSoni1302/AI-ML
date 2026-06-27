@@ -1,0 +1,11 @@
+student_id,name,confidence_score,violations,status,improved_status,decision_reason
+1,Pavan,87,0,Review Required,Verified,Confidence threshold satisfied.
+2,Rahul,71,2,Rejected,Rejected,Low confidence or excessive violations.
+3,Priya,91,0,Verified,Verified,High confidence with no violations.
+4,Amit,63,2,Rejected,Rejected,Low confidence or excessive violations.
+5,Sneha,84,0,Review Required,Verified,Confidence threshold satisfied.
+6,Rohan,76,0,Rejected,Manual Review,Borderline candidate requires manual review.
+7,Neha,92,0,Verified,Verified,High confidence with no violations.
+8,Arjun,69,2,Rejected,Rejected,Low confidence or excessive violations.
+9,Karan,85,0,Review Required,Verified,Confidence threshold satisfied.
+10,Meera,89,0,Review Required,Verified,Confidence threshold satisfied.
