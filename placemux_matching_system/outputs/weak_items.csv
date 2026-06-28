@@ -1,0 +1,6 @@
+job_id,role,issues,status
+101.0,80,Low Communication requirement,Needs Review
+102.0,60,Low Communication requirement,Needs Review
+103.0,85,Low Communication requirement,Needs Review
+104.0,70,Low Python requirement | Low Communication requirement,Needs Review
+105.0,75,Low Communication requirement,Needs Review
