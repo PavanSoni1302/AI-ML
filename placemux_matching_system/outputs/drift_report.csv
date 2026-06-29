@@ -1,0 +1,37 @@
+student_id,student_name,job_role,baseline_score,current_score,drift,status
+9,Karan,Data Analyst,85.0,86.5,1.5,Stable
+5,Sneha,Data Analyst,85.0,85.5,0.5,Stable
+1,Pavan,Data Analyst,85.0,84.5,-0.5,Stable
+10,Meera,Data Analyst,85.0,83.5,-1.5,Stable
+3,Priya,Data Analyst,85.0,81.75,-3.25,Stable
+7,Neha,Data Analyst,85.0,80.0,-5.0,Stable
+1,Pavan,85,85.0,75.25,-9.75,Monitor
+9,Karan,85,85.0,75.25,-9.75,Monitor
+9,Karan,75,85.0,72.0,-13.0,Monitor
+10,Meera,85,85.0,71.75,-13.25,Monitor
+5,Sneha,85,85.0,71.25,-13.75,Monitor
+9,Karan,80,85.0,71.0,-14.0,Monitor
+5,Sneha,75,85.0,71.0,-14.0,Monitor
+1,Pavan,80,85.0,70.0,-15.0,Monitor
+3,Priya,85,85.0,70.0,-15.0,Monitor
+1,Pavan,75,85.0,70.0,-15.0,Monitor
+10,Meera,75,85.0,69.0,-16.0,Retrain
+5,Sneha,80,85.0,68.5,-16.5,Retrain
+9,Karan,60,85.0,68.25,-16.75,Retrain
+7,Neha,85,85.0,68.25,-16.75,Retrain
+3,Priya,75,85.0,67.25,-17.75,Retrain
+1,Pavan,60,85.0,67.25,-17.75,Retrain
+10,Meera,80,85.0,66.5,-18.5,Retrain
+5,Sneha,60,85.0,65.75,-19.25,Retrain
+7,Neha,75,85.0,65.5,-19.5,Retrain
+3,Priya,80,85.0,64.75,-20.25,Retrain
+10,Meera,60,85.0,63.75,-21.25,Retrain
+9,Karan,70,85.0,63.5,-21.5,Retrain
+7,Neha,80,85.0,63.0,-22.0,Retrain
+1,Pavan,70,85.0,62.5,-22.5,Retrain
+3,Priya,60,85.0,62.0,-23.0,Retrain
+5,Sneha,70,85.0,61.0,-24.0,Retrain
+7,Neha,60,85.0,60.25,-24.75,Retrain
+10,Meera,70,85.0,59.0,-26.0,Retrain
+3,Priya,70,85.0,57.25,-27.75,Retrain
+7,Neha,70,85.0,55.5,-29.5,Retrain

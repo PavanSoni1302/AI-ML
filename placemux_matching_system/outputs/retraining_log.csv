@@ -1,0 +1,37 @@
+student_id,job_role,drift_status,action,timestamp
+9,Data Analyst,Stable,No Action,2026-06-29 23:49:00.720972
+5,Data Analyst,Stable,No Action,2026-06-29 23:49:00.720972
+1,Data Analyst,Stable,No Action,2026-06-29 23:49:00.720972
+10,Data Analyst,Stable,No Action,2026-06-29 23:49:00.720972
+3,Data Analyst,Stable,No Action,2026-06-29 23:49:00.720972
+7,Data Analyst,Stable,No Action,2026-06-29 23:49:00.720972
+1,85,Monitor,Monitoring,2026-06-29 23:49:00.720972
+9,85,Monitor,Monitoring,2026-06-29 23:49:00.720972
+9,75,Monitor,Monitoring,2026-06-29 23:49:00.720972
+10,85,Monitor,Monitoring,2026-06-29 23:49:00.720972
+5,85,Monitor,Monitoring,2026-06-29 23:49:00.720972
+9,80,Monitor,Monitoring,2026-06-29 23:49:00.720972
+5,75,Monitor,Monitoring,2026-06-29 23:49:00.720972
+1,80,Monitor,Monitoring,2026-06-29 23:49:00.720972
+3,85,Monitor,Monitoring,2026-06-29 23:49:00.720972
+1,75,Monitor,Monitoring,2026-06-29 23:49:00.720972
+10,75,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+5,80,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+9,60,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+7,85,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+3,75,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+1,60,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+10,80,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+5,60,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+7,75,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+3,80,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+10,60,Retrain,Model Retrained,2026-06-29 23:49:00.720972
+9,70,Retrain,Model Retrained,2026-06-29 23:49:00.721972
+7,80,Retrain,Model Retrained,2026-06-29 23:49:00.721972
+1,70,Retrain,Model Retrained,2026-06-29 23:49:00.721972
+3,60,Retrain,Model Retrained,2026-06-29 23:49:00.721972
+5,70,Retrain,Model Retrained,2026-06-29 23:49:00.721972
+7,60,Retrain,Model Retrained,2026-06-29 23:49:00.721972
+10,70,Retrain,Model Retrained,2026-06-29 23:49:00.721972
+3,70,Retrain,Model Retrained,2026-06-29 23:49:00.721972
+7,70,Retrain,Model Retrained,2026-06-29 23:49:00.721972
