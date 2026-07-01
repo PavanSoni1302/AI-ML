@@ -1,2 +1,4 @@
-student,recommended_job,match_score,python_gap,ml_gap,sql_gap,communication_gap
-Pavan,70,150,50,17,5,78
+Candidate,Average Score,Recommendation,Reason
+John,91.33,Highly Recommended,"John has verified skills in Python, Machine Learning, SQL. Average score is 91.3, therefore the recommendation is 'Highly Recommended'."
+Priya,91.0,Highly Recommended,"Priya has verified skills in Java, Spring Boot. Average score is 91.0, therefore the recommendation is 'Highly Recommended'."
+Rahul,88.0,Recommended,"Rahul has verified skills in Cyber Security, Blockchain. Average score is 88.0, therefore the recommendation is 'Recommended'."

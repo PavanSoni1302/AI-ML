@@ -1,0 +1,4 @@
+Model Name,Version,Algorithm,Accuracy,Precision,Recall,RMSE,Status,Created On
+Candidate Matching Model,v1.0,Random Forest,91.8,90.4,89.7,0.19,Production,2026-07-01 12:55
+Resume Parser,v1.0,Rule + NLP,95.1,94.0,93.8,0.12,Production,2026-07-01 12:55
+Recommendation Engine,v1.0,Hybrid Ranking,92.9,91.5,90.8,0.15,Production,2026-07-01 12:55
