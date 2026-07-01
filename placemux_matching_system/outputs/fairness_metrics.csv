@@ -1,2 +1,7 @@
-Total Candidates,Low Risk,Medium Risk,High Risk,Average Recommendation Score
-36,0,8,28,69.39
+Metric,Value
+Baseline Accuracy,84.5
+Model Accuracy,91.8
+Precision,90.4
+Recall,89.7
+False Positive Rate,4.1
+False Negative Rate,3.7

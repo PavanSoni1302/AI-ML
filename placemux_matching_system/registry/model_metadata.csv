@@ -1,0 +1,4 @@
+Model Name,Version,Dataset,Training Samples,Features,Algorithm,Created On,Status
+Candidate Matching,v1.0,PlaceMux Dataset,16347,906,Random Forest,2026-07-01,Production
+Resume Parser,v1.0,Resume Dataset,8000,NLP,Rule+NLP,2026-07-01,Production
+Recommendation Engine,v1.0,Skill Dataset,12000,Hybrid,Ranking,2026-07-01,Production

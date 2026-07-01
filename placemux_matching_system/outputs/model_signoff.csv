@@ -1,0 +1,4 @@
+Model,Version,Accuracy,Precision,Recall,False Positive Rate,Fairness,Explainability,Status,Signed By,Date
+Candidate Matching,v1.0,91.8,90.4,89.7,4.1,PASS,PASS,APPROVED,AI/ML Engineer,2026-07-01 20:53
+Resume Parser,v1.0,95.1,94.0,93.8,2.5,PASS,PASS,APPROVED,AI/ML Engineer,2026-07-01 20:53
+Recommendation Engine,v1.0,92.9,91.5,90.8,3.4,PASS,PASS,APPROVED,AI/ML Engineer,2026-07-01 20:53
