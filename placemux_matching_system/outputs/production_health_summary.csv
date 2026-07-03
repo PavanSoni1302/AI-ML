@@ -1,0 +1,2 @@
+Timestamp,Models,Healthy Models,Average Accuracy,Average Precision,Average Recall,Average Availability,Average CPU,Average Memory,Average Latency,Health Score,Drift Health,Model Sign-off,Production Status
+2026-07-03 21:00:57,3,3,91.8,90.4,89.7,99.16,32.0,53.33,0.072,92.76,WARNING,PASS,MONITOR CLOSELY

@@ -1,0 +1,4 @@
+Timestamp,Model,Version,Accuracy,Precision,Recall,Latency,CPU,Memory,Availability,Drift,Drift Status,Health Score,Production
+2026-07-03 20:48:38,Candidate Matching Model,v1.0,91.8,90.4,89.7,0.041,20,62,98.94,0.063,CRITICAL,92.71,REVIEW
+2026-07-03 20:48:38,Resume Parser,v1.0,91.8,90.4,89.7,0.091,39,53,99.33,0.077,CRITICAL,92.81,REVIEW
+2026-07-03 20:48:38,Recommendation Engine,v1.0,91.8,90.4,89.7,0.084,37,45,99.21,0.06,CRITICAL,92.78,REVIEW

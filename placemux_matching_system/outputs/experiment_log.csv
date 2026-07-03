@@ -1,0 +1,4 @@
+Run ID,Timestamp,Model,Version,Dataset Version,Algorithm,Accuracy,Precision,Recall,Training Time (sec),Run Duration (sec),Model Size (MB),Environment,Git Branch,Status,Experiment Notes
+EXP-1001,2026-07-03 20:54:24,Candidate Matching Model,v1.0,Dataset v3.0,Random Forest,91.8,90.4,89.7,90,1.49,46.51,Production,main,Completed,Training completed successfully with production configuration.
+EXP-1002,2026-07-03 20:54:24,Resume Parser,v1.0,Dataset v3.0,Rule + NLP,95.1,94.0,93.8,85,1.75,62.48,Production,main,Completed,Training completed successfully with production configuration.
+EXP-1003,2026-07-03 20:54:24,Recommendation Engine,v1.0,Dataset v3.0,Hybrid Ranking,92.9,91.5,90.8,165,0.89,65.16,Production,main,Completed,Training completed successfully with production configuration.

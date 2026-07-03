@@ -1,0 +1,8 @@
+Metric,Value
+Models,3
+Features,7
+Healthy Models,3
+Approved Models,3
+Critical Drift,3
+Production Status,MONITOR CLOSELY
+Go Live,MANUAL REVIEW REQUIRED

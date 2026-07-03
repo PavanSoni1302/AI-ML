@@ -1,0 +1,2 @@
+Timestamp,Models,Healthy Models,Warning Models,Critical Models,Average CPU,Average Memory,Average Latency,Average Response,Availability,Prediction Count,Requests,Failures,Success Rate,Health Score,Production Status
+2026-07-03 21:03:32,3,3,0,3,32.0,53.33,0.072,0.073,99.16,2800,1426,6,99.5,92.76,MONITOR CLOSELY

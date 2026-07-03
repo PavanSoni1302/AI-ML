@@ -1,0 +1,4 @@
+Timestamp,Model,Version,Latency (sec),Average Response Time,CPU Usage (%),Memory Usage (%),Availability (%),Prediction Count,Requests Today,Failed Requests,Success Rate (%),Health
+2026-07-03 20:46:35,Candidate Matching Model,v1.0,0.041,0.061,20,62,98.94,832,463,2,99.57,Healthy
+2026-07-03 20:46:35,Resume Parser,v1.0,0.091,0.073,39,53,99.33,470,372,4,98.92,Healthy
+2026-07-03 20:46:35,Recommendation Engine,v1.0,0.084,0.086,37,45,99.21,1498,591,0,100.0,Healthy
